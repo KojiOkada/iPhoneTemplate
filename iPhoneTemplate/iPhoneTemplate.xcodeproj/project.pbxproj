@@ -19,14 +19,6 @@
 		11869FCF16B0D4D1005C2DDD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11869FCE16B0D4D1005C2DDD /* ViewController.m */; };
 		11869FD216B0D4D1005C2DDD /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11869FD016B0D4D1005C2DDD /* ViewController.xib */; };
 		1186A1C616B0D751005C2DDD /* libBlocksKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1186A1AB16B0D751005C2DDD /* libBlocksKit.a */; };
-		1186A1C716B0D751005C2DDD /* NANetworkGCDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A1AF16B0D751005C2DDD /* NANetworkGCDHelper.m */; };
-		1186A1C816B0D751005C2DDD /* NANetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A1B116B0D751005C2DDD /* NANetworkActivityIndicatorManager.m */; };
-		1186A1C916B0D751005C2DDD /* NANetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A1B316B0D751005C2DDD /* NANetworkConfig.m */; };
-		1186A1CA16B0D751005C2DDD /* NSURLRequest+na.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A1B516B0D751005C2DDD /* NSURLRequest+na.m */; };
-		1186A1CB16B0D751005C2DDD /* NABaseNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A1B816B0D751005C2DDD /* NABaseNetworkOperation.m */; };
-		1186A1CC16B0D751005C2DDD /* NANetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A1BA16B0D751005C2DDD /* NANetworkOperation.m */; };
-		1186A1CD16B0D751005C2DDD /* NSOperationQueue+na.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A1BC16B0D751005C2DDD /* NSOperationQueue+na.m */; };
-		1186A1CE16B0D751005C2DDD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1186A1BD16B0D751005C2DDD /* README.md */; };
 		1186A1CF16B0D751005C2DDD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A1C016B0D751005C2DDD /* Reachability.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		1186A1D016B0D751005C2DDD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1186A1C116B0D751005C2DDD /* README.md */; };
 		1186A1D116B0D751005C2DDD /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1186A1C316B0D751005C2DDD /* SVProgressHUD.bundle */; };
@@ -48,6 +40,18 @@
 		1186A21516B11175005C2DDD /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A21416B10FDB005C2DDD /* Global.m */; };
 		1186A23D16B118A5005C2DDD /* NSManagedObjectContextExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A1E816B0EAB0005C2DDD /* NSManagedObjectContextExtra.m */; };
 		1186A23E16B11ABF005C2DDD /* XMDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A23116B115D6005C2DDD /* XMDataManager.m */; };
+		1186A25616B11EEC005C2DDD /* NANetworkGCDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A24716B11EEC005C2DDD /* NANetworkGCDHelper.m */; };
+		1186A25716B11EEC005C2DDD /* NANetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A24916B11EEC005C2DDD /* NANetworkActivityIndicatorManager.m */; };
+		1186A25816B11EEC005C2DDD /* NANetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A24B16B11EEC005C2DDD /* NANetworkConfig.m */; };
+		1186A25916B11EEC005C2DDD /* NSURLRequest+na.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A24D16B11EEC005C2DDD /* NSURLRequest+na.m */; };
+		1186A25A16B11EEC005C2DDD /* NABaseNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A25016B11EEC005C2DDD /* NABaseNetworkOperation.m */; };
+		1186A25B16B11EEC005C2DDD /* NANetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A25216B11EEC005C2DDD /* NANetworkOperation.m */; };
+		1186A25C16B11EEC005C2DDD /* NSOperationQueue+na.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A25416B11EEC005C2DDD /* NSOperationQueue+na.m */; };
+		1186A25D16B11EEC005C2DDD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1186A25516B11EEC005C2DDD /* README.md */; };
+		1186A25F16B11F37005C2DDD /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1186A25E16B11F37005C2DDD /* Twitter.framework */; };
+		1186A26116B11F4B005C2DDD /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1186A26016B11F4B005C2DDD /* Accounts.framework */; };
+		1186A26516B11F7D005C2DDD /* TwitterTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A26316B11F7D005C2DDD /* TwitterTestViewController.m */; };
+		1186A26616B11F7D005C2DDD /* TwitterTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1186A26416B11F7D005C2DDD /* TwitterTestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,21 +116,6 @@
 		1186A1A916B0D751005C2DDD /* UIView+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BlocksKit.h"; sourceTree = "<group>"; };
 		1186A1AA16B0D751005C2DDD /* UIWebView+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+BlocksKit.h"; sourceTree = "<group>"; };
 		1186A1AB16B0D751005C2DDD /* libBlocksKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBlocksKit.a; sourceTree = "<group>"; };
-		1186A1AE16B0D751005C2DDD /* NANetworkGCDHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NANetworkGCDHelper.h; sourceTree = "<group>"; };
-		1186A1AF16B0D751005C2DDD /* NANetworkGCDHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NANetworkGCDHelper.m; sourceTree = "<group>"; };
-		1186A1B016B0D751005C2DDD /* NANetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NANetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
-		1186A1B116B0D751005C2DDD /* NANetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NANetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
-		1186A1B216B0D751005C2DDD /* NANetworkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NANetworkConfig.h; sourceTree = "<group>"; };
-		1186A1B316B0D751005C2DDD /* NANetworkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NANetworkConfig.m; sourceTree = "<group>"; };
-		1186A1B416B0D751005C2DDD /* NSURLRequest+na.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+na.h"; sourceTree = "<group>"; };
-		1186A1B516B0D751005C2DDD /* NSURLRequest+na.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+na.m"; sourceTree = "<group>"; };
-		1186A1B716B0D751005C2DDD /* NABaseNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NABaseNetworkOperation.h; sourceTree = "<group>"; };
-		1186A1B816B0D751005C2DDD /* NABaseNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NABaseNetworkOperation.m; sourceTree = "<group>"; };
-		1186A1B916B0D751005C2DDD /* NANetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NANetworkOperation.h; sourceTree = "<group>"; };
-		1186A1BA16B0D751005C2DDD /* NANetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NANetworkOperation.m; sourceTree = "<group>"; };
-		1186A1BB16B0D751005C2DDD /* NSOperationQueue+na.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOperationQueue+na.h"; sourceTree = "<group>"; };
-		1186A1BC16B0D751005C2DDD /* NSOperationQueue+na.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOperationQueue+na.m"; sourceTree = "<group>"; };
-		1186A1BD16B0D751005C2DDD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1186A1BF16B0D751005C2DDD /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		1186A1C016B0D751005C2DDD /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		1186A1C116B0D751005C2DDD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -161,6 +150,29 @@
 		1186A21416B10FDB005C2DDD /* Global.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Global.m; sourceTree = "<group>"; };
 		1186A23016B115D6005C2DDD /* XMDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMDataManager.h; sourceTree = "<group>"; };
 		1186A23116B115D6005C2DDD /* XMDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMDataManager.m; sourceTree = "<group>"; };
+		1186A24616B11EEC005C2DDD /* NANetworkGCDHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NANetworkGCDHelper.h; sourceTree = "<group>"; };
+		1186A24716B11EEC005C2DDD /* NANetworkGCDHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NANetworkGCDHelper.m; sourceTree = "<group>"; };
+		1186A24816B11EEC005C2DDD /* NANetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NANetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		1186A24916B11EEC005C2DDD /* NANetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NANetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		1186A24A16B11EEC005C2DDD /* NANetworkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NANetworkConfig.h; sourceTree = "<group>"; };
+		1186A24B16B11EEC005C2DDD /* NANetworkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NANetworkConfig.m; sourceTree = "<group>"; };
+		1186A24C16B11EEC005C2DDD /* NSURLRequest+na.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+na.h"; sourceTree = "<group>"; };
+		1186A24D16B11EEC005C2DDD /* NSURLRequest+na.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+na.m"; sourceTree = "<group>"; };
+		1186A24F16B11EEC005C2DDD /* NABaseNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NABaseNetworkOperation.h; sourceTree = "<group>"; };
+		1186A25016B11EEC005C2DDD /* NABaseNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NABaseNetworkOperation.m; sourceTree = "<group>"; };
+		1186A25116B11EEC005C2DDD /* NANetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NANetworkOperation.h; sourceTree = "<group>"; };
+		1186A25216B11EEC005C2DDD /* NANetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NANetworkOperation.m; sourceTree = "<group>"; };
+		1186A25316B11EEC005C2DDD /* NSOperationQueue+na.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOperationQueue+na.h"; sourceTree = "<group>"; };
+		1186A25416B11EEC005C2DDD /* NSOperationQueue+na.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOperationQueue+na.m"; sourceTree = "<group>"; };
+		1186A25516B11EEC005C2DDD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		1186A25E16B11F37005C2DDD /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		1186A26016B11F4B005C2DDD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		1186A26216B11F7D005C2DDD /* TwitterTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterTestViewController.h; sourceTree = "<group>"; };
+		1186A26316B11F7D005C2DDD /* TwitterTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterTestViewController.m; sourceTree = "<group>"; };
+		1186A26416B11F7D005C2DDD /* TwitterTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterTestViewController.xib; sourceTree = "<group>"; };
+		1186A27016B121F9005C2DDD /* HistoryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryCell.h; sourceTree = "<group>"; };
+		1186A27116B121F9005C2DDD /* HistoryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryCell.m; sourceTree = "<group>"; };
+		1186A27216B121F9005C2DDD /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +180,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1186A26116B11F4B005C2DDD /* Accounts.framework in Frameworks */,
+				1186A25F16B11F37005C2DDD /* Twitter.framework in Frameworks */,
 				1186A1EA16B0EAC2005C2DDD /* CoreData.framework in Frameworks */,
 				1186A1E616B0EA63005C2DDD /* QuartzCore.framework in Frameworks */,
 				1186A1E416B0EA51005C2DDD /* MessageUI.framework in Frameworks */,
@@ -187,6 +201,8 @@
 		11869FA616B0D4D1005C2DDD = {
 			isa = PBXGroup;
 			children = (
+				1186A26016B11F4B005C2DDD /* Accounts.framework */,
+				1186A25E16B11F37005C2DDD /* Twitter.framework */,
 				11869FBB16B0D4D1005C2DDD /* iPhoneTemplate */,
 				11869FB416B0D4D1005C2DDD /* Frameworks */,
 				11869FB216B0D4D1005C2DDD /* Products */,
@@ -221,15 +237,10 @@
 		11869FBB16B0D4D1005C2DDD /* iPhoneTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				1186A23016B115D6005C2DDD /* XMDataManager.h */,
-				1186A23116B115D6005C2DDD /* XMDataManager.m */,
-				1186A21316B10FDA005C2DDD /* Global.h */,
-				1186A21416B10FDB005C2DDD /* Global.m */,
 				11869FC416B0D4D1005C2DDD /* AppDelegate.h */,
 				11869FC516B0D4D1005C2DDD /* AppDelegate.m */,
-				11869FCD16B0D4D1005C2DDD /* ViewController.h */,
-				11869FCE16B0D4D1005C2DDD /* ViewController.m */,
-				11869FD016B0D4D1005C2DDD /* ViewController.xib */,
+				1186A26716B11F87005C2DDD /* Common */,
+				1186A26816B11FAB005C2DDD /* ViewController */,
 				1186A21216B10F72005C2DDD /* Entity */,
 				11869FBC16B0D4D1005C2DDD /* Supporting Files */,
 			);
@@ -254,13 +265,13 @@
 		1186A17B16B0D751005C2DDD /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				1186A24416B11EEC005C2DDD /* network */,
 				1186A1F116B0EC10005C2DDD /* JSON */,
 				1186A1EB16B0EAEA005C2DDD /* R9HTTPRequest.h */,
 				1186A1EC16B0EAEA005C2DDD /* R9HTTPRequest.m */,
 				1186A1E716B0EAB0005C2DDD /* NSManagedObjectContextExtra.h */,
 				1186A1E816B0EAB0005C2DDD /* NSManagedObjectContextExtra.m */,
 				1186A17C16B0D751005C2DDD /* BlocksKit */,
-				1186A1AC16B0D751005C2DDD /* na_ios_network */,
 				1186A1BE16B0D751005C2DDD /* Reachability */,
 				1186A1C216B0D751005C2DDD /* SVProgressHUD */,
 			);
@@ -335,44 +346,6 @@
 			path = BlocksKit;
 			sourceTree = "<group>";
 		};
-		1186A1AC16B0D751005C2DDD /* na_ios_network */ = {
-			isa = PBXGroup;
-			children = (
-				1186A1AD16B0D751005C2DDD /* gcds */,
-				1186A1B016B0D751005C2DDD /* NANetworkActivityIndicatorManager.h */,
-				1186A1B116B0D751005C2DDD /* NANetworkActivityIndicatorManager.m */,
-				1186A1B216B0D751005C2DDD /* NANetworkConfig.h */,
-				1186A1B316B0D751005C2DDD /* NANetworkConfig.m */,
-				1186A1B416B0D751005C2DDD /* NSURLRequest+na.h */,
-				1186A1B516B0D751005C2DDD /* NSURLRequest+na.m */,
-				1186A1B616B0D751005C2DDD /* operations */,
-				1186A1BD16B0D751005C2DDD /* README.md */,
-			);
-			path = na_ios_network;
-			sourceTree = "<group>";
-		};
-		1186A1AD16B0D751005C2DDD /* gcds */ = {
-			isa = PBXGroup;
-			children = (
-				1186A1AE16B0D751005C2DDD /* NANetworkGCDHelper.h */,
-				1186A1AF16B0D751005C2DDD /* NANetworkGCDHelper.m */,
-			);
-			path = gcds;
-			sourceTree = "<group>";
-		};
-		1186A1B616B0D751005C2DDD /* operations */ = {
-			isa = PBXGroup;
-			children = (
-				1186A1B716B0D751005C2DDD /* NABaseNetworkOperation.h */,
-				1186A1B816B0D751005C2DDD /* NABaseNetworkOperation.m */,
-				1186A1B916B0D751005C2DDD /* NANetworkOperation.h */,
-				1186A1BA16B0D751005C2DDD /* NANetworkOperation.m */,
-				1186A1BB16B0D751005C2DDD /* NSOperationQueue+na.h */,
-				1186A1BC16B0D751005C2DDD /* NSOperationQueue+na.m */,
-			);
-			path = operations;
-			sourceTree = "<group>";
-		};
 		1186A1BE16B0D751005C2DDD /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,6 +391,71 @@
 				1186A21016B10F63005C2DDD /* Category.m */,
 			);
 			name = Entity;
+			sourceTree = "<group>";
+		};
+		1186A24416B11EEC005C2DDD /* network */ = {
+			isa = PBXGroup;
+			children = (
+				1186A24516B11EEC005C2DDD /* gcds */,
+				1186A24816B11EEC005C2DDD /* NANetworkActivityIndicatorManager.h */,
+				1186A24916B11EEC005C2DDD /* NANetworkActivityIndicatorManager.m */,
+				1186A24A16B11EEC005C2DDD /* NANetworkConfig.h */,
+				1186A24B16B11EEC005C2DDD /* NANetworkConfig.m */,
+				1186A24C16B11EEC005C2DDD /* NSURLRequest+na.h */,
+				1186A24D16B11EEC005C2DDD /* NSURLRequest+na.m */,
+				1186A24E16B11EEC005C2DDD /* operations */,
+				1186A25516B11EEC005C2DDD /* README.md */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		1186A24516B11EEC005C2DDD /* gcds */ = {
+			isa = PBXGroup;
+			children = (
+				1186A24616B11EEC005C2DDD /* NANetworkGCDHelper.h */,
+				1186A24716B11EEC005C2DDD /* NANetworkGCDHelper.m */,
+			);
+			path = gcds;
+			sourceTree = "<group>";
+		};
+		1186A24E16B11EEC005C2DDD /* operations */ = {
+			isa = PBXGroup;
+			children = (
+				1186A24F16B11EEC005C2DDD /* NABaseNetworkOperation.h */,
+				1186A25016B11EEC005C2DDD /* NABaseNetworkOperation.m */,
+				1186A25116B11EEC005C2DDD /* NANetworkOperation.h */,
+				1186A25216B11EEC005C2DDD /* NANetworkOperation.m */,
+				1186A25316B11EEC005C2DDD /* NSOperationQueue+na.h */,
+				1186A25416B11EEC005C2DDD /* NSOperationQueue+na.m */,
+			);
+			path = operations;
+			sourceTree = "<group>";
+		};
+		1186A26716B11F87005C2DDD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1186A23016B115D6005C2DDD /* XMDataManager.h */,
+				1186A23116B115D6005C2DDD /* XMDataManager.m */,
+				1186A21316B10FDA005C2DDD /* Global.h */,
+				1186A21416B10FDB005C2DDD /* Global.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		1186A26816B11FAB005C2DDD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				11869FCD16B0D4D1005C2DDD /* ViewController.h */,
+				11869FCE16B0D4D1005C2DDD /* ViewController.m */,
+				11869FD016B0D4D1005C2DDD /* ViewController.xib */,
+				1186A26216B11F7D005C2DDD /* TwitterTestViewController.h */,
+				1186A26316B11F7D005C2DDD /* TwitterTestViewController.m */,
+				1186A26416B11F7D005C2DDD /* TwitterTestViewController.xib */,
+				1186A27016B121F9005C2DDD /* HistoryCell.h */,
+				1186A27116B121F9005C2DDD /* HistoryCell.m */,
+				1186A27216B121F9005C2DDD /* HistoryCell.xib */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,9 +514,10 @@
 				11869FCA16B0D4D1005C2DDD /* Default@2x.png in Resources */,
 				11869FCC16B0D4D1005C2DDD /* Default-568h@2x.png in Resources */,
 				11869FD216B0D4D1005C2DDD /* ViewController.xib in Resources */,
-				1186A1CE16B0D751005C2DDD /* README.md in Resources */,
 				1186A1D016B0D751005C2DDD /* README.md in Resources */,
 				1186A1D116B0D751005C2DDD /* SVProgressHUD.bundle in Resources */,
+				1186A25D16B11EEC005C2DDD /* README.md in Resources */,
+				1186A26616B11F7D005C2DDD /* TwitterTestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,13 +531,6 @@
 				11869FC216B0D4D1005C2DDD /* main.m in Sources */,
 				11869FC616B0D4D1005C2DDD /* AppDelegate.m in Sources */,
 				11869FCF16B0D4D1005C2DDD /* ViewController.m in Sources */,
-				1186A1C716B0D751005C2DDD /* NANetworkGCDHelper.m in Sources */,
-				1186A1C816B0D751005C2DDD /* NANetworkActivityIndicatorManager.m in Sources */,
-				1186A1C916B0D751005C2DDD /* NANetworkConfig.m in Sources */,
-				1186A1CA16B0D751005C2DDD /* NSURLRequest+na.m in Sources */,
-				1186A1CB16B0D751005C2DDD /* NABaseNetworkOperation.m in Sources */,
-				1186A1CC16B0D751005C2DDD /* NANetworkOperation.m in Sources */,
-				1186A1CD16B0D751005C2DDD /* NSOperationQueue+na.m in Sources */,
 				1186A1CF16B0D751005C2DDD /* Reachability.m in Sources */,
 				1186A1D216B0D751005C2DDD /* SVProgressHUD.m in Sources */,
 				1186A1FD16B0EC10005C2DDD /* NSObject+SBJSON.m in Sources */,
@@ -512,6 +544,14 @@
 				1186A21516B11175005C2DDD /* Global.m in Sources */,
 				1186A23D16B118A5005C2DDD /* NSManagedObjectContextExtra.m in Sources */,
 				1186A23E16B11ABF005C2DDD /* XMDataManager.m in Sources */,
+				1186A25616B11EEC005C2DDD /* NANetworkGCDHelper.m in Sources */,
+				1186A25716B11EEC005C2DDD /* NANetworkActivityIndicatorManager.m in Sources */,
+				1186A25816B11EEC005C2DDD /* NANetworkConfig.m in Sources */,
+				1186A25916B11EEC005C2DDD /* NSURLRequest+na.m in Sources */,
+				1186A25A16B11EEC005C2DDD /* NABaseNetworkOperation.m in Sources */,
+				1186A25B16B11EEC005C2DDD /* NANetworkOperation.m in Sources */,
+				1186A25C16B11EEC005C2DDD /* NSOperationQueue+na.m in Sources */,
+				1186A26516B11F7D005C2DDD /* TwitterTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,7 +600,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -585,7 +625,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (
 					"-all_load",

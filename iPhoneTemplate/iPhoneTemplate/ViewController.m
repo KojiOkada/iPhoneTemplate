@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Category.h"
+#import "TwitterTestViewController.h"
 @interface ViewController ()
 
 @end
@@ -24,7 +25,13 @@
     [super didReceiveMemoryWarning];
 }
 
+#pragma mark --ButtonAction
+-(IBAction)buttonDidPush:(id)sender{
+    TwitterTestViewController* viewController = [[TwitterTestViewController alloc]initWithNibName:@"TwitterTestViewController" bundle:nil];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
 
+#pragma mark --Request
 -(void)sendRequest{
     
     NSString *strURL = [NSString stringWithFormat:@"%@/api/W0001.php",WEB_URL];
