@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1810" systemVersion="11G63b" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="category_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="category_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="create_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="160" positionY="192" width="128" height="105"/>
+    </elements>
+</model>

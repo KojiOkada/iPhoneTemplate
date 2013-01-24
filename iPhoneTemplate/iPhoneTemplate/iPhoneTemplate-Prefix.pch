@@ -1,0 +1,45 @@
+//
+// Prefix header for all source files of the 'iPhoneTemplate' target in the 'iPhoneTemplate' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import "JSON.h"
+#import "Global.h"
+#import "AppDelegate.h"
+#import "R9HTTPRequest.h"
+#import "XMDataManager.h"
+#import "NSManagedObjectContextExtra.h"
+
+#endif
+
+#ifdef DEBUG
+#define WEB_URL @"http://54.248.73.138/"
+#else
+#define WEB_URL @"http://54.248.73.138/"
+#endif
+
+
+#define APILoaderMgr [APILoaderManager sharedAPILoaderManager]
+//#define appDelegate (AppDelegate*)[UIApplication sharedApplication].delegate
+
+// フォント
+#define BASE_FONT(asize)        [UIFont fontWithName:@"Helvetica-Bold" size:asize]  // 標準スタイル
+#define BASE_BOLDFONT(size)     [UIFont boldSystemFontOfSize:size]                  // 太字スタイル
+#define BASE_ITALICFONT(size)   [UIFont italicSystemFontOfSize:size]                // 斜体スタイル
+
+#ifdef DEBUG
+#  define DebugLog(...) NSLog(__VA_ARGS__);
+#  define LOG_CURRENT_METHOD NSLog(@"%@/%@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+#else
+#  define DebugLog(...) ;
+#  define LOG_CURRENT_METHOD ;
+#endif
