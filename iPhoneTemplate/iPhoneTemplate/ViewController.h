@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<FBLoginViewDelegate>
 -(void)sendRequest;
 @property (strong, nonatomic) IBOutlet UIButton *buttonLoginLogout;
 @property (strong, nonatomic) IBOutlet UITextView *textNoteOrLink;

@@ -4,7 +4,8 @@
 //
 //  Created by システム管理者 on 13/01/24.
 //  Copyright (c) 2013年 koji.Okada. All rights reserved.
-//
+//GraphAPIについて
+//https://developers.facebook.com/docs/reference/api/
 
 #import "ViewController.h"
 #import "Category.h"
@@ -21,7 +22,7 @@
     //[self sendRequest];
     
     [self updateView];
-    
+
     AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
     if (!appDelegate.session.isOpen) {
         // create a fresh session object
@@ -57,7 +58,8 @@
     }
 }
 -(IBAction)getFriends:(id)sender{
-     [self getFBFriend];
+     //[self getFBFriend];
+    [self getMyInfo];
 }
 - (IBAction)buttonClickHandler:(id)sender {
     // get the app delegate so that we can access the session property
@@ -99,6 +101,7 @@
 -(void)getFBFriend{
   AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
     NSString *strURL =[NSString stringWithFormat:@"https://graph.facebook.com/me/friends?access_token=%@",appDelegate.session.accessToken];
+    
     R9HTTPRequest *HTTPRequest = [[R9HTTPRequest alloc] initWithURL:[NSURL URLWithString:strURL]];
     [HTTPRequest setHTTPMethod:@"GET"];
  
@@ -111,11 +114,41 @@
                 return;
             }
             DebugLog(@"%@",[json description])
-            
+            NSArray *array = [json objectForKey:@"data"];
+            DebugLog(@"count = %d",[array count])
             dispatch_async(dispatch_get_main_queue(), ^{
                
             });
             
+        }
+        
+    }];
+    
+    if ([HTTPRequest startRequest] == NO) {
+        
+    }
+}
+-(void)getMyInfo{
+    
+    AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
+    NSString *strURL =[NSString stringWithFormat:@"https://graph.facebook.com/me?access_token=%@",appDelegate.session.accessToken];
+    
+    R9HTTPRequest *HTTPRequest = [[R9HTTPRequest alloc] initWithURL:[NSURL URLWithString:strURL]];
+    [HTTPRequest setHTTPMethod:@"GET"];
+    
+    [HTTPRequest setCompletionHandler:^(NSHTTPURLResponse *responseHeader, NSString *responseString){
+        
+        if(responseString !=nil){
+            id json=[responseString JSONValue];
+            if(json==nil){
+                return;
+            }
+            DebugLog(@"%@",[json description])
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+            });
+            [self getFBFriend];
         }
         
     }];
@@ -209,4 +242,7 @@
     managedContext=nil;
 
 }
+
+
+
 @end
