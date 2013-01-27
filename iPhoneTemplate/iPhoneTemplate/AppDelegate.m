@@ -29,7 +29,13 @@
     [[NSUserDefaults standardUserDefaults]setObject:WEB_URL forKey:@"WEB_URL"];
     return YES;
 }
-
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    // attempt to extract a token from the url
+    return [self.session handleOpenURL:url];
+}
 - (void)applicationWillResignActive:(UIApplication *)application{
 
 }

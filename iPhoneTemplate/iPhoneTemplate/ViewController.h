@@ -10,5 +10,6 @@
 
 @interface ViewController : UIViewController
 -(void)sendRequest;
-
+@property (strong, nonatomic) IBOutlet UIButton *buttonLoginLogout;
+@property (strong, nonatomic) IBOutlet UITextView *textNoteOrLink;
 @end
