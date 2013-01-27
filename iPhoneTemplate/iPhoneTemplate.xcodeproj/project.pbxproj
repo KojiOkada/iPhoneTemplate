@@ -49,9 +49,13 @@
 		1186A25C16B11EEC005C2DDD /* NSOperationQueue+na.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A25416B11EEC005C2DDD /* NSOperationQueue+na.m */; };
 		1186A25D16B11EEC005C2DDD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1186A25516B11EEC005C2DDD /* README.md */; };
 		1186A25F16B11F37005C2DDD /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1186A25E16B11F37005C2DDD /* Twitter.framework */; };
-		1186A26116B11F4B005C2DDD /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1186A26016B11F4B005C2DDD /* Accounts.framework */; };
+		1186A26116B11F4B005C2DDD /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1186A26016B11F4B005C2DDD /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		1186A26516B11F7D005C2DDD /* TwitterTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A26316B11F7D005C2DDD /* TwitterTestViewController.m */; };
 		1186A26616B11F7D005C2DDD /* TwitterTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1186A26416B11F7D005C2DDD /* TwitterTestViewController.xib */; };
+		87E033F616B56E2E001AF58C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E033F516B56E2E001AF58C /* FacebookSDK.framework */; };
+		87E033F916B56E64001AF58C /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 87E033F816B56E64001AF58C /* FacebookSDKResources.bundle */; };
+		87E033FB16B56E85001AF58C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E033FA16B56E85001AF58C /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		87E033FD16B56EAA001AF58C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E033FC16B56EAA001AF58C /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -173,6 +177,10 @@
 		1186A27016B121F9005C2DDD /* HistoryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryCell.h; sourceTree = "<group>"; };
 		1186A27116B121F9005C2DDD /* HistoryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryCell.m; sourceTree = "<group>"; };
 		1186A27216B121F9005C2DDD /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		87E033F516B56E2E001AF58C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		87E033F816B56E64001AF58C /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../../../FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
+		87E033FA16B56E85001AF58C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		87E033FC16B56EAA001AF58C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +188,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87E033FD16B56EAA001AF58C /* Social.framework in Frameworks */,
+				87E033FB16B56E85001AF58C /* AdSupport.framework in Frameworks */,
 				1186A26116B11F4B005C2DDD /* Accounts.framework in Frameworks */,
 				1186A25F16B11F37005C2DDD /* Twitter.framework in Frameworks */,
 				1186A1EA16B0EAC2005C2DDD /* CoreData.framework in Frameworks */,
@@ -192,6 +202,7 @@
 				11869FB816B0D4D1005C2DDD /* Foundation.framework in Frameworks */,
 				11869FBA16B0D4D1005C2DDD /* CoreGraphics.framework in Frameworks */,
 				1186A1C616B0D751005C2DDD /* libBlocksKit.a in Frameworks */,
+				87E033F616B56E2E001AF58C /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +212,8 @@
 		11869FA616B0D4D1005C2DDD = {
 			isa = PBXGroup;
 			children = (
+				87E033FC16B56EAA001AF58C /* Social.framework */,
+				87E033FA16B56E85001AF58C /* AdSupport.framework */,
 				1186A26016B11F4B005C2DDD /* Accounts.framework */,
 				1186A25E16B11F37005C2DDD /* Twitter.framework */,
 				11869FBB16B0D4D1005C2DDD /* iPhoneTemplate */,
@@ -265,6 +278,8 @@
 		1186A17B16B0D751005C2DDD /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				87E033F816B56E64001AF58C /* FacebookSDKResources.bundle */,
+				87E033F516B56E2E001AF58C /* FacebookSDK.framework */,
 				1186A24416B11EEC005C2DDD /* network */,
 				1186A1F116B0EC10005C2DDD /* JSON */,
 				1186A1EB16B0EAEA005C2DDD /* R9HTTPRequest.h */,
@@ -518,6 +533,7 @@
 				1186A1D116B0D751005C2DDD /* SVProgressHUD.bundle in Resources */,
 				1186A25D16B11EEC005C2DDD /* README.md in Resources */,
 				1186A26616B11F7D005C2DDD /* TwitterTestViewController.xib in Resources */,
+				87E033F916B56E64001AF58C /* FacebookSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +620,7 @@
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
+					"-lsqlite3.0",
 				);
 				SDKROOT = iphoneos;
 			};
@@ -630,6 +647,7 @@
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
+					"-lsqlite3.0",
 				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -639,6 +657,10 @@
 		11869FD616B0D4D1005C2DDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../FacebookSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iPhoneTemplate/iPhoneTemplate-Prefix.pch";
 				INFOPLIST_FILE = "iPhoneTemplate/iPhoneTemplate-Info.plist";
@@ -654,6 +676,10 @@
 		11869FD716B0D4D1005C2DDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../FacebookSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iPhoneTemplate/iPhoneTemplate-Prefix.pch";
 				INFOPLIST_FILE = "iPhoneTemplate/iPhoneTemplate-Info.plist";

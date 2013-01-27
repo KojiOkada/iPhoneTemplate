@@ -4,7 +4,8 @@
 //
 //  Created by システム管理者 on 13/01/24.
 //  Copyright (c) 2013年 koji.Okada. All rights reserved.
-//
+//FBの設定にてURLスキームとFB AppIDを登録
+
 
 #import <UIKit/UIKit.h>
 
