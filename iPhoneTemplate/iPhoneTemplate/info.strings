@@ -1,0 +1,50 @@
+/* 
+ 
+ API
+ 　LikeYouログイン
+ 　SNSユーザー送信（チェックが付いた物だけ）
+ 　LikeYouサーバよりユーザリストを取得
+ 　チェックをつけたユーザを送信
+ 　Push通知
+ 
+ nimbusKit組み込み（デザイン）
+ http://yakuyakuyaku.blogspot.jp/2012/10/nimbus.html
+ http://qiita.com/items/0d92373de7e5637ad866
+ 
+ 画面作成
+ 　コンテンツ画面
+ 　ログイン画面
+ 
+ TabbarController
+ 
+ ・contentViewController
+ 
+ LikeYouサーバからユーザをダウンロードして保存
+ /FBユーザ読み込み ユーザごとの写真を読み込みする必要がある。
+// https://graph.facebook.com/216311481960?fields=picture,name
+ /Twitterユーザ読み込み
+ ２つのリストをマージする。
+ チェックをつけた段階でそのユーザを送信する。リクエスト戻りにてreloadData
+ ReloadData { genderが女性もしくはNullならば相手のチェックを表示させる。
+ ・contentCell
+ ・loginViewController
+ 　　FBとTwitterのログインをする。
+ ・キャンペーン　- TabBarにバッジ表示
+ ・おすすめアプリ紹介
+ 　　　組み込みWebなので手間は特にない。データをキャッシュする。
+ 
+ ＊これはAppDelegateに書き込んじゃう？
+ XMUserInfo
+ 　　ユーザ情報を格納
+ 　　TwitterのAccessTokenを取得
+ 
+ 広告SDK組み込み
+ Push通知を受け取れるようにする。
+ アイコン作成
+ 
+ ＜確認事項>
+ 
+ ・クライアントにてFacebookのAppIDを作ってもらう
+ ・ERD,APIの定義
+ ・Twitterにてユーザ情報を取得する。
+*/

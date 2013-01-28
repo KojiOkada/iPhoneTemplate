@@ -10,6 +10,8 @@
 
 #import "TwitterTestViewController.h"
 #import "HistoryCell.h"
+#import <Twitter/Twitter.h>
+#import "BlocksKit.h"
 @interface TwitterTestViewController ()
 
 @end
@@ -28,23 +30,67 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    ACAccountStore *accountStore = [[ACAccountStore alloc] init];
-    ACAccountType *accountType = [accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
-    [accountStore requestAccessToAccountsWithType:accountType
+    
+    _accountStore = [[ACAccountStore alloc] init];
+    accountType = [_accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
+    [_accountStore requestAccessToAccountsWithType:accountType
                             withCompletionHandler:^(BOOL granted, NSError *error) {
                                 if (granted) {
-                                    _accounts = [[NSMutableArray alloc] initWithArray:[accountStore accountsWithAccountType:accountType]];
+                                    _accounts = [[NSMutableArray alloc] initWithArray:[_accountStore accountsWithAccountType:accountType]];
                                     dispatch_sync(dispatch_get_main_queue(), ^{
                                         [self.tableView reloadData];
                                     });
-                                    
+                                    if (account == nil) {
+                                        NSArray *accountArray = [_accountStore accountsWithAccountType:accountType];
+                                        account = [accountArray objectAtIndex:0];
+                                        DebugLog(@"userName:%@",account.username)
+                                        DebugLog(@"identifier:%@",account.identifier)
+                                    }
                                     DebugLog(@"%@",[_accounts description])
+                                    //このアカウント情報からユーザーの名前をとったりができる
+                                    [self sendRequest];
                                 } else {
+                                    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"えらー" message:@"nil"];
+                                    [alert addButtonWithTitle:@"OK" handler:^{
+                                            NSURL *twSettingURL = [NSURL URLWithString:@"prefs:root=TWITTER"];
+                                            [[UIApplication sharedApplication] openURL:twSettingURL];
+                                    
+                                    }];
+                                    [alert show];
                                     NSLog(@"許可されなかった");
                                 }
                             }];
 }
 
+-(void)sendRequest{
+
+    
+if (account != nil) {
+    NSURL *url = [NSURL URLWithString:@"http://api.twitter.com/1/statuses/followers.json"];
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    [params setObject:@"20" forKey:@"count"];
+//    [params setObject:@"1" forKey:@"include_entities"];
+//    [params setObject:@"1" forKey:@"include_rts"];
+    
+    TWRequest *request = [[TWRequest alloc] initWithURL:url
+                parameters:params requestMethod:TWRequestMethodGET];
+    [request setAccount:account];
+    
+    [request performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+                                            
+        if (responseData) {
+            NSError *jsonError;
+            NSArray *timeline = [NSJSONSerialization JSONObjectWithData:responseData
+            options:NSJSONReadingMutableLeaves error:&jsonError];
+                                                DebugLog(@"%@", timeline);
+        }
+                                            
+        }];
+                                        
+                                        
+    }
+
+}
 #pragma mark TalbeViewDataSouce
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;

@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <Accounts/Accounts.h>
-@interface TwitterTestViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface TwitterTestViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
+    ACAccountType *accountType;
+    ACAccount *account;
+}
 @property (nonatomic,weak) IBOutlet UITableView *tableView;
 @property (nonatomic,retain) NSMutableArray *accounts;
+@property (nonatomic,retain) ACAccountStore *accountStore;
+
 @end

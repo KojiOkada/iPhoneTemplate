@@ -23,6 +23,12 @@
     
     [self updateView];
 
+    _buttonLoginLogout.text = @"login";
+    _buttonLoginLogout.backgroundColor = [UIColor blueColor];
+    _buttonGetFriend.text = @"GetFriend";
+    _buttonGetFriend.backgroundColor = [UIColor blueColor];
+    _buttonTwitter.text = @"Twitter";
+    _buttonTwitter.backgroundColor = [UIColor blueColor];
     AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
     if (!appDelegate.session.isOpen) {
         // create a fresh session object
@@ -49,11 +55,11 @@
     AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
     if (appDelegate.session.isOpen) {
         // valid account UI is shown whenever the session is open
-        [self.buttonLoginLogout setTitle:@"Log out" forState:UIControlStateNormal];
+        _buttonLoginLogout.text = @"Log out";
         [self.textNoteOrLink setText:[NSString stringWithFormat:@"https://graph.facebook.com/me/friends?access_token=%@",appDelegate.session.accessToken]];
     } else {
         // login-needed account UI is shown whenever the session is closed
-        [self.buttonLoginLogout setTitle:@"Log in" forState:UIControlStateNormal];
+        _buttonLoginLogout.text = @"Log in";
         [self.textNoteOrLink setText:@"Login to create a link to fetch account data"];
     }
 }

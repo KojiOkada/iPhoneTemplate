@@ -54,6 +54,8 @@
 		1186A26616B11F7D005C2DDD /* TwitterTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1186A26416B11F7D005C2DDD /* TwitterTestViewController.xib */; };
 		877C67D216B57162001131A1 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 877C67D116B57162001131A1 /* FacebookSDKResources.bundle */; };
 		877C67D516B57170001131A1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877C67D416B57170001131A1 /* FacebookSDK.framework */; };
+		87A8005216B6C2E800F22247 /* GradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A8005116B6C2E800F22247 /* GradientButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87A8005616B6C56500F22247 /* info.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87A8005516B6C56500F22247 /* info.strings */; };
 		87E033FB16B56E85001AF58C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E033FA16B56E85001AF58C /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		87E033FD16B56EAA001AF58C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E033FC16B56EAA001AF58C /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -179,6 +181,9 @@
 		1186A27216B121F9005C2DDD /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
 		877C67D116B57162001131A1 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../../../../../../Documents/FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
 		877C67D416B57170001131A1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		87A8005116B6C2E800F22247 /* GradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientButton.m; sourceTree = "<group>"; };
+		87A8005416B6C2F100F22247 /* GradientButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientButton.h; sourceTree = "<group>"; };
+		87A8005516B6C56500F22247 /* info.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = info.strings; sourceTree = "<group>"; };
 		87E033FA16B56E85001AF58C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		87E033FC16B56EAA001AF58C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -271,6 +276,7 @@
 				11869FC716B0D4D1005C2DDD /* Default.png */,
 				11869FC916B0D4D1005C2DDD /* Default@2x.png */,
 				11869FCB16B0D4D1005C2DDD /* Default-568h@2x.png */,
+				87A8005516B6C56500F22247 /* info.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -449,6 +455,8 @@
 		1186A26716B11F87005C2DDD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				87A8005416B6C2F100F22247 /* GradientButton.h */,
+				87A8005116B6C2E800F22247 /* GradientButton.m */,
 				1186A23016B115D6005C2DDD /* XMDataManager.h */,
 				1186A23116B115D6005C2DDD /* XMDataManager.m */,
 				1186A21316B10FDA005C2DDD /* Global.h */,
@@ -534,6 +542,7 @@
 				1186A25D16B11EEC005C2DDD /* README.md in Resources */,
 				1186A26616B11F7D005C2DDD /* TwitterTestViewController.xib in Resources */,
 				877C67D216B57162001131A1 /* FacebookSDKResources.bundle in Resources */,
+				87A8005616B6C56500F22247 /* info.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +577,7 @@
 				1186A25B16B11EEC005C2DDD /* NANetworkOperation.m in Sources */,
 				1186A25C16B11EEC005C2DDD /* NSOperationQueue+na.m in Sources */,
 				1186A26516B11F7D005C2DDD /* TwitterTestViewController.m in Sources */,
+				87A8005216B6C2E800F22247 /* GradientButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,7 +613,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Koji Okada (9C6QSX3N3P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Koji Okada (9C6QSX3N3P)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -622,6 +633,8 @@
 					"-ObjC",
 					"-lsqlite3.0",
 				);
+				PROVISIONING_PROFILE = "D681E4CA-D73A-4874-B617-B8A8184ED68E";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "56CCADA3-02A9-43D5-ACBA-D4D281FF5524";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -636,7 +649,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Koji Okada (9C6QSX3N3P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Koji Okada";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -649,6 +663,8 @@
 					"-ObjC",
 					"-lsqlite3.0",
 				);
+				PROVISIONING_PROFILE = "D681E4CA-D73A-4874-B617-B8A8184ED68E";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1557B043-8BCA-4CCF-B4E5-A8F306C293E1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -657,6 +673,8 @@
 		11869FD616B0D4D1005C2DDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Koji Okada (9C6QSX3N3P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Koji Okada (9C6QSX3N3P)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../FacebookSDK\"",
@@ -670,6 +688,8 @@
 					"\"$(SRCROOT)/lib/BlocksKit\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D681E4CA-D73A-4874-B617-B8A8184ED68E";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D681E4CA-D73A-4874-B617-B8A8184ED68E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -677,6 +697,8 @@
 		11869FD716B0D4D1005C2DDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Koji Okada (9C6QSX3N3P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Koji Okada (9C6QSX3N3P)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../FacebookSDK\"",
@@ -690,6 +712,8 @@
 					"\"$(SRCROOT)/lib/BlocksKit\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D681E4CA-D73A-4874-B617-B8A8184ED68E";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D681E4CA-D73A-4874-B617-B8A8184ED68E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

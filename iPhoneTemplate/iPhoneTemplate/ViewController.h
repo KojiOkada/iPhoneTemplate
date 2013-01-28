@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController<FBLoginViewDelegate>
 -(void)sendRequest;
-@property (strong, nonatomic) IBOutlet UIButton *buttonLoginLogout;
+@property (strong, nonatomic) IBOutlet GradientButton *buttonLoginLogout;
+@property (strong, nonatomic) IBOutlet GradientButton *buttonTwitter;
+@property (strong, nonatomic) IBOutlet GradientButton *buttonGetFriend;
 @property (strong, nonatomic) IBOutlet UITextView *textNoteOrLink;
 @end
