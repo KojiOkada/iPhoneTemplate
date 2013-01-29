@@ -52,8 +52,8 @@
 		1186A26116B11F4B005C2DDD /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1186A26016B11F4B005C2DDD /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		1186A26516B11F7D005C2DDD /* TwitterTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1186A26316B11F7D005C2DDD /* TwitterTestViewController.m */; };
 		1186A26616B11F7D005C2DDD /* TwitterTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1186A26416B11F7D005C2DDD /* TwitterTestViewController.xib */; };
-		877C67D216B57162001131A1 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 877C67D116B57162001131A1 /* FacebookSDKResources.bundle */; };
-		877C67D516B57170001131A1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877C67D416B57170001131A1 /* FacebookSDK.framework */; };
+		872E30C516B8317C00ACE33A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 872E30C416B8317C00ACE33A /* FacebookSDK.framework */; };
+		872E30C716B8318F00ACE33A /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 872E30C616B8318F00ACE33A /* FacebookSDKResources.bundle */; };
 		87A8005216B6C2E800F22247 /* GradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A8005116B6C2E800F22247 /* GradientButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		87A8005616B6C56500F22247 /* info.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87A8005516B6C56500F22247 /* info.strings */; };
 		87E033FB16B56E85001AF58C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E033FA16B56E85001AF58C /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -179,8 +179,8 @@
 		1186A27016B121F9005C2DDD /* HistoryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryCell.h; sourceTree = "<group>"; };
 		1186A27116B121F9005C2DDD /* HistoryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryCell.m; sourceTree = "<group>"; };
 		1186A27216B121F9005C2DDD /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
-		877C67D116B57162001131A1 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../../../../../../Documents/FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
-		877C67D416B57170001131A1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		872E30C416B8317C00ACE33A /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = lib/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		872E30C616B8318F00ACE33A /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = lib/FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
 		87A8005116B6C2E800F22247 /* GradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientButton.m; sourceTree = "<group>"; };
 		87A8005416B6C2F100F22247 /* GradientButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientButton.h; sourceTree = "<group>"; };
 		87A8005516B6C56500F22247 /* info.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = info.strings; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 				11869FB816B0D4D1005C2DDD /* Foundation.framework in Frameworks */,
 				11869FBA16B0D4D1005C2DDD /* CoreGraphics.framework in Frameworks */,
 				1186A1C616B0D751005C2DDD /* libBlocksKit.a in Frameworks */,
-				877C67D516B57170001131A1 /* FacebookSDK.framework in Frameworks */,
+				872E30C516B8317C00ACE33A /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +239,8 @@
 		11869FB416B0D4D1005C2DDD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				872E30C616B8318F00ACE33A /* FacebookSDKResources.bundle */,
+				872E30C416B8317C00ACE33A /* FacebookSDK.framework */,
 				1186A1E916B0EAC2005C2DDD /* CoreData.framework */,
 				1186A1E516B0EA63005C2DDD /* QuartzCore.framework */,
 				1186A1E316B0EA51005C2DDD /* MessageUI.framework */,
@@ -284,8 +286,6 @@
 		1186A17B16B0D751005C2DDD /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				877C67D416B57170001131A1 /* FacebookSDK.framework */,
-				877C67D116B57162001131A1 /* FacebookSDKResources.bundle */,
 				1186A24416B11EEC005C2DDD /* network */,
 				1186A1F116B0EC10005C2DDD /* JSON */,
 				1186A1EB16B0EAEA005C2DDD /* R9HTTPRequest.h */,
@@ -541,8 +541,8 @@
 				1186A1D116B0D751005C2DDD /* SVProgressHUD.bundle in Resources */,
 				1186A25D16B11EEC005C2DDD /* README.md in Resources */,
 				1186A26616B11F7D005C2DDD /* TwitterTestViewController.xib in Resources */,
-				877C67D216B57162001131A1 /* FacebookSDKResources.bundle in Resources */,
 				87A8005616B6C56500F22247 /* info.strings in Resources */,
+				872E30C716B8318F00ACE33A /* FacebookSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,6 +679,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../FacebookSDK\"",
 					/Documents/FacebookSDK,
+					"\"$(SRCROOT)/lib/FacebookSDK\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iPhoneTemplate/iPhoneTemplate-Prefix.pch";
@@ -703,6 +704,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../FacebookSDK\"",
 					/Documents/FacebookSDK,
+					"\"$(SRCROOT)/lib/FacebookSDK\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iPhoneTemplate/iPhoneTemplate-Prefix.pch";
