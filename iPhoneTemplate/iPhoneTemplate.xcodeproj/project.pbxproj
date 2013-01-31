@@ -61,6 +61,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1184078C16BA63D800387138 /* UIAsyncImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIAsyncImageView.h; sourceTree = "<group>"; };
+		1184078D16BA63D800387138 /* UIAsyncImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIAsyncImageView.m; sourceTree = "<group>"; };
 		11869FB116B0D4D1005C2DDD /* iPhoneTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhoneTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11869FB516B0D4D1005C2DDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		11869FB716B0D4D1005C2DDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -455,6 +457,8 @@
 		1186A26716B11F87005C2DDD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1184078C16BA63D800387138 /* UIAsyncImageView.h */,
+				1184078D16BA63D800387138 /* UIAsyncImageView.m */,
 				87A8005416B6C2F100F22247 /* GradientButton.h */,
 				87A8005116B6C2E800F22247 /* GradientButton.m */,
 				1186A23016B115D6005C2DDD /* XMDataManager.h */,
@@ -677,8 +681,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Koji Okada (9C6QSX3N3P)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../FacebookSDK\"",
-					/Documents/FacebookSDK,
 					"\"$(SRCROOT)/lib/FacebookSDK\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -702,8 +704,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Koji Okada (9C6QSX3N3P)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../FacebookSDK\"",
-					/Documents/FacebookSDK,
 					"\"$(SRCROOT)/lib/FacebookSDK\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

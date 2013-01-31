@@ -47,16 +47,14 @@
                                         DebugLog(@"identifier:%@",account.identifier)
                                     }
                                     DebugLog(@"%@",[_accounts description])
+                                    if([account.username length]> 0){
                                     //このアカウント情報からユーザーの名前をとったりができる
-                                    [self sendRequest];
+                                        [self sendRequest];
+                                    }
                                 } else {
-                                    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"えらー" message:@"nil"];
-                                    [alert addButtonWithTitle:@"OK" handler:^{
-                                            NSURL *twSettingURL = [NSURL URLWithString:@"prefs:root=TWITTER"];
-                                            [[UIApplication sharedApplication] openURL:twSettingURL];
-                                    
-                                    }];
-                                    [alert show];
+//                                    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"えらー" message:@"nil"];
+//                                    [alert addButtonWithTitle:@"OK" handler:nil];
+//                                    [alert show];
                                     NSLog(@"許可されなかった");
                                 }
                             }];
