@@ -1,0 +1,4 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/A2DynamicDelegate" "${PODS_ROOT}/Headers/BlocksKit" "${PODS_ROOT}/Headers/JSONKit" "${PODS_ROOT}/Headers/MagicalRecord" "${PODS_ROOT}/Headers/Reachability" "${PODS_ROOT}/Headers/SVProgressHUD" "${PODS_ROOT}/Headers/UIGlossyButton" "${PODS_ROOT}/Headers/libffi"
+OTHER_LDFLAGS = -ObjC -Wl,-no_compact_unwind -framework CoreData -framework MessageUI -framework QuartzCore -framework SystemConfiguration -framework UIKit
+PODS_ROOT = ${SRCROOT}/Pods

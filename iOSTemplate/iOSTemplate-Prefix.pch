@@ -1,0 +1,23 @@
+//
+// Prefix header for all source files of the 'iOSTemplate' target in the 'iOSTemplate' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#define MR_SHORTHAND
+#import "CoreData+MagicalRecord.h"
+#import "UIGlossyButton.h"
+#import "UIView+LayerEffects.h"
+#import "DataManager.h"
+#import "UIView+Extra.h"
+#import "NSManagedObject+Extra.h"
+#import <QuartzCore/QuartzCore.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#endif

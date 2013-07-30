@@ -1,0 +1,35 @@
+PODS:
+  - A2DynamicDelegate (2.0.2):
+    - libffi
+  - BlocksKit (1.5.2):
+    - A2DynamicDelegate
+  - JSONKit (1.5pre)
+  - libffi (3.0.13)
+  - MagicalRecord (2.1)
+  - Reachability (3.0.0)
+  - SVProgressHUD (0.9)
+  - UIGlossyButton (0.0.7):
+    - UIGlossyButton/Core
+    - UIGlossyButton/LayerEffects
+  - UIGlossyButton/Core (0.0.7)
+  - UIGlossyButton/LayerEffects (0.0.7)
+
+DEPENDENCIES:
+  - BlocksKit (~> 1.5.2)
+  - JSONKit
+  - MagicalRecord
+  - Reachability (~> 3.0.0)
+  - SVProgressHUD (~> 0.8)
+  - UIGlossyButton
+
+SPEC CHECKSUMS:
+  A2DynamicDelegate: 013b345f1aca891ded67a95c1512fad677c260a9
+  BlocksKit: 12fbe889d9f8cc66adf5c9bd4cb0606071f214f2
+  JSONKit: 409734ab3407fce90ef7eaa95d7168f38d9a6601
+  libffi: 64ef39353e747bb2b25e1026afd96a157bf9231c
+  MagicalRecord: 64e7184c240087a45e9588a722eaf05b0ad837f7
+  Reachability: 500bd76bf6cd8ff2c6fb715fc5f44ef6e4c024f2
+  SVProgressHUD: 03d4845ec8e64591726428a08236c6a5489d45f8
+  UIGlossyButton: ac45013a4cf79d80dd3a2c137f4d36baf7058b17
+
+COCOAPODS: 0.22.3
