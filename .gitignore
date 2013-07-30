@@ -1,0 +1,8 @@
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcworkspace/contents.xcworkspacedata
+*.xcworkspace/xcuserdata/*
+*.xcworkspace/xcuserdata/scubism.xcuserdatad/UserInterfaceState.xcuserstate
+.DS_Store
+Pods/
+Podfile.lock
